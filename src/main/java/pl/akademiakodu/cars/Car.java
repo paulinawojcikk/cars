@@ -8,7 +8,7 @@ public class Car {
     private String brand;
     private String model;
     private String description;
-    private static List<Car> cars = new ArrayList<>();
+
 
     public Car(String brand, String model, String description) {
         this.brand = brand;
@@ -16,13 +16,9 @@ public class Car {
         this.description = description;
     }
 
-    public Car () {
-        cars.add(this);
-    }
+    public Car () {}
 
-    public static List<Car> findAll() {
-        return cars;
-    }
+
 
     public String getBrand() {
         return brand;
